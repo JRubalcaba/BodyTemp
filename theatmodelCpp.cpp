@@ -37,7 +37,7 @@ NumericVector theatmodelCpp(double Tb,
                             double skin_humidity = 1,
                             double resistance = 60000,        
                             double posture = 1, 
-                            double vent = 1/3, 
+                            double vent = 2/3, 
                             int delta = 60, 
                             double C = 3.6){
   NumericVector out(2);

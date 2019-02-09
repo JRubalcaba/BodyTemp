@@ -47,7 +47,7 @@ NumericVector theatmodelCpp(double Tb,
     double Ag = vent * A;
     double A1 = (1-vent) * A * posture; 
     double l = pow(A, 1/2);
-    double a = 0.4;   
+    double a = 0.8;   
     
     //// Estimation convection coefficient
     double nu = -1.1555e-14*pow(Ta+273, 3) + 9.5728e-11*pow(Ta+273, 2) + 3.7604e-08*(Ta+273) - 3.4484e-06;   

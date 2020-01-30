@@ -1,10 +1,10 @@
-# A transient-heat biophyisical model to derive body temperature and rates of evaporative water loss of terrestrial ectotherms.           
-## Juan G. Rubalcaba (jg.rubalcaba@gmail.com)                                              
+# Modelling body temperature of ectotherms           
+## Juan G. Rubalcaba                                              
 
-RCode.R contains the transient-heat biophyisical model used in the manuscripts: Rubalcaba et al. "A mechanistic model to scale up biophysical processes into geographical size gradients in ectotherms", and Rubalcaba et al. "Upscaling microclimatic conditions into body temperature distribution of ectotherms"
+This is a transient-heat model that simulates changes in body temperature of terrestrial ectotherms as a function of solar radiation, convection, conduction to ground, evaporative cooling, and thermal radiation.
 
-The function theatmodel() is a transient-heat biophysical model that derives body temperature (Tb) and rate of 
-evaporative water loss from the skin (EWL) of ectotherms by computing the heat exchanged through solar radiation, convection, 
-conduction to ground, evaporative cooling, thermal radiation.
+````RCode.R```` contains the function theatmodel() which computes both body temperature and evaporative water loss used in Rubalcaba et al. (2019, Glob Ecol Biogeogr), Rubalcaba et al. (2019, Am Nat) and Rubalcaba & Olalla-Tárraga (2020, J Anim Ecol). 
 
-The function theatmodelCpp() is the RCpp version of the transient-heat model that allows more rapid iterative computation.
+The function ````theatmodelCpp()```` is just a RCpp version that makes the calculations more quickly.
+
+Any questions of comments, please contact me jg.rubalcaba@gmail.com

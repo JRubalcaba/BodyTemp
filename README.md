@@ -7,4 +7,4 @@ This is a transient-heat model that simulates changes in body temperature of ter
 
 The function ````theatmodelCpp()```` is just a RCpp version of the above, which makes the calculations more quickly.
 
-Any questions of comments, please contact me jg.rubalcaba@gmail.com
+Any questions please contact me jg.rubalcaba@gmail.com

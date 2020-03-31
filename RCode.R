@@ -37,9 +37,9 @@ theatmodel <- function(Tb,       # Body temperature at time t (the function give
       Q <- function(Tb){
         qabs <- A1 * a * S + 0.2 * A1 * S + 0.2 * A1 * S # Absorption of solar radiation
         qevap <-  L * EWL_estimate                     # Evaporative cooling
-        qrad <- A1 * sigma * epsilon * (Tb^4 - Ta^4)   # Emission of long-wave radiation
-        qconv <- A1 * hc * (Tb - Ta)                   # COnvection
-        qcond <- Ag * hg * (Tb - Tg)                   # Conduction to the ground
+        qrad <- A1 * sigma * epsilon * ((Tb+273)^4 - (Ta+273)^4)   # Emission of long-wave radiation
+        qconv <- A1 * hc * ((Tb+273) - (Ta+273))                   # COnvection
+        qcond <- Ag * hg * ((Tb+273) - (Tg+273))                   # Conduction to the ground
         qnet <- qabs - qevap - qrad - qconv - qcond    # Net heat flux
         return(qnet)
       }

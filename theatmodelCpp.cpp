@@ -18,9 +18,9 @@ double Q(double Tb,
   double Ta_t = Ta + 273;
   double Tg_t = Tg + 273;
   
-  double qabs = A1 * abs * S;
-  double qevap =  2257 * EWL; 
-  double qrad = 5.670367e-8 * emis * (A1 * (Tb_t*Tb_t*Tb_t*Tb_t - Ta_t*Ta_t*Ta_t*Ta_t) + Ag * (Tb_t*Tb_t*Tb_t*Tb_t - Tg_t*Tg_t*Tg_t*Tg_t));  
+  double qabs = A1 * a * S;
+  double qevap =  2257 * EWL_estimate; 
+  double qrad = 5.670367e-8 * 0.95 * (A1 * (Tb_t*Tb_t*Tb_t*Tb_t - Ta_t*Ta_t*Ta_t*Ta_t) + Ag * (Tb_t*Tb_t*Tb_t*Tb_t - Tg_t*Tg_t*Tg_t*Tg_t));  
   double qconv = A1 * hc * (Tb_t - Ta_t);                   
   double qcond = Ag * hg * (Tb_t - Tg_t);                   
   double qnet = qabs - qevap - qrad - qconv - qcond;    
